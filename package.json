@@ -1,0 +1,22 @@
+{
+  "name": "fake-users-alesscuderi",
+  "version": "0.0.1",
+  "description": "This is my first package, yay! It manages an array of fake users.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fake",
+    "users",
+    "array",
+    "user",
+    "its",
+    "jobs"
+  ],
+  "author": "alesscuderi <alesscuderi@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^4.1.0"
+  }
+}
