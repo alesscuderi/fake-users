@@ -43,5 +43,5 @@ replaces the information of the user at the given position with new ones
 
 console.log(this.resetUsers());
 
-reset any modification made to the array.
+resets any modification made to the array.
 ```
