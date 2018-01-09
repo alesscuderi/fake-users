@@ -1,6 +1,6 @@
 {
   "name": "fake-users-alesscuderi",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "This is my first package, yay! It manages an array of fake users.",
   "main": "index.js",
   "scripts": {

@@ -23,9 +23,11 @@ var users = [
     surname: 'Alliccaricchi'
   }
 ];
-
-var resetUsers = JSON.parse(JSON.stringify(users)); //questo serve a "ingannare" javascript clonando l'oggetto users.
-//questo perché JavaScript, quando creiamo una variabile uguale ad un'altra, tratta la seconda come una sorta di alias.
+var clone = function(obj) {
+  return JSON.parse(JSON.stringify(obj))//questo serve a "ingannare" javascript clonando l'oggetto users.
+  //questo perché JavaScript, quando creiamo una variabile uguale ad un'altra, tratta la seconda come una sorta di alias.
+}
+var resetUsers = clone(users);
 
 //exports rende una funzione esportabile e utilizzabile da utenti terzi.
 exports.getAll = function(){
@@ -72,7 +74,7 @@ exports.editUser = function(id, newUser) {
 }
 
 exports.resetUsers = function() {
-  users = JSON.parse(JSON.stringify(resetUsers));
+  users = clone(resetUsers)
   return users;
 }
 
